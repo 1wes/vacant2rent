@@ -43,7 +43,7 @@ function PropertyDetails({ listing }) {
         <CompareDetails />
         <div className="d-flex align-center">
           <p className="mr-3 font-weight-bold">Compare</p>
-          <i>arrow</i>
+          <i class="fas fa-exchange-alt"></i>
         </div>
       </div>
 

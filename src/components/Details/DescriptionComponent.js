@@ -20,10 +20,10 @@ function DescriptionComponent({ description }) {
           </div>
         </div>
         <div className="col-md-4">
-          <div className='text-center border pt-2 pb-4 px-4 rounded'>
+          <div className='text-center border pt-2 pb-4 px-4 rounded capitalize hover'>
             <img src={image} alt="hello" className= 'mb-3 rounded-circle' />
-            <p className='capitalize color-primary h5 mb-1'>Virginia Mull</p>
-            <p>to get contract request</p>
+            <p className='color-primary h5 mb-1'>Virginia Mull</p>
+            <p className=' '>to get contract request</p>
             <form>
               <div className='mb-3'>
                 <label htmlFor="name" className='align-bottom mb-0'>Name:</label>
