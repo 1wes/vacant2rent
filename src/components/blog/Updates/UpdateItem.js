@@ -5,7 +5,7 @@ function UpdateItem(props) {
   const { title, imageUrl, detail, _id } = props.update;
 
   return (
-    <div className="Card">
+    <div className="Card hover mb-4">
       <div>
         <div className='foto'>
           <img src={imageUrl} alt={title} />

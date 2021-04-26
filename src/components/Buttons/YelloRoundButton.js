@@ -6,10 +6,11 @@ function YelloRoundButton({text}) {
     padding: '5px 1.5rem',
     borderRadius: '50px',
     backgroundColor: 'hsl(50, 100%, 50%)',
-    marginTop: '.5rem',
-    marginTottom: '.5rem',
+    margin: '.5rem auto',
+   
     fontWeight: 'bold',
-    minWidth: '150px'
+    // minWidth: '100px'
+  
   }
   return (
     <button style={buttonStyle} >{text}</button>

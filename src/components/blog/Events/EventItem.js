@@ -4,7 +4,7 @@ import React from "react";
 function EventItem(props) {
   const { title, detail, imageUrl } = props.event;
   return (
-    <div className="col-sm-12 col-md-6 text-center mb-5">
+    <div className="col-sm-12 col-md-6 text-center mb-5 hover">
       <img src={imageUrl} alt={title} className="w-100 mb-2" />
       <h2 className="mb-2">{title}</h2>
       <p className="mb-2">{detail}</p>
