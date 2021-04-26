@@ -9,7 +9,7 @@ function YelloRoundButton({text}) {
     margin: '.5rem auto',
    
     fontWeight: 'bold',
-    // minWidth: '100px'
+    minWidth: '130px'
   
   }
   return (

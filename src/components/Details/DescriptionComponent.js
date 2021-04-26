@@ -25,13 +25,13 @@ function DescriptionComponent({ description }) {
             <p className='capitalize color-primary h5 mb-1'>Virginia Mull</p>
             <p>to get contract request</p>
             <form>
-              <div className= 'mb-3'>
-                <label htmlFor="name">Name:</label>
-                <input name="name" type="text" className= 'border-dark border-top-0 border-right-0 border-left-0 border-bottom p-1 w-100' />
+              <div className='mb-3'>
+                <label htmlFor="name" className='align-bottom mb-0'>Name:</label>
+                <input name="name" type="text" className= 'border-dark border-top-0 border-right-0 border-left-0 border-bottom p-1 col-8' />
               </div>
               <div className= 'mb-3'>
-                <label htmlFor="email">Email:</label>
-                <input name="email" type="email" className= 'border-dark border-top-0 border-right-0 border-left-0 border-bottom p-1 w-100' />
+                <label htmlFor="email" className='align-bottom mb-0'>Email:</label>
+                <input name="email" type="email" className= 'border-dark border-top-0 border-right-0 border-left-0 border-bottom p-1 col-8' />
               </div>
               <div>
                 <p className='color-primary h3'>12</p>
