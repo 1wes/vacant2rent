@@ -93,15 +93,16 @@ div.content h3, .latest-post h2, .ads h3, .latest-events h2, .key-facts h2, .col
     outline: none;
     border: none;
 }
-a.car-link{
+
+a.car-link {
     text-decoration: none;
     margin: 1rem 0;
 }
 
-a.car-link:hover, .hover:hover{
-    box-shadow: 0 0.25rem 1rem rgba(48, 55, 66, 0.15) ;
-
+a.car-link:hover, .hover:hover {
+    box-shadow: 0 0.25rem 1rem rgba(48, 55, 66, 0.15);
 }
+
 .property-card .top {
     position: relative;
 }
@@ -122,3 +123,10 @@ a.car-link:hover, .hover:hover{
     flex-direction: column;
     justify-content: space-between;
 }
+
+label {
+    text-transform: capitalize;
+    align-self: flex-end;
+}
+
+
