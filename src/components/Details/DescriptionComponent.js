@@ -26,11 +26,11 @@ function DescriptionComponent({ description }) {
             <p className=' '>to get contract request</p>
             <form>
               <div className='mb-3'>
-                <label htmlFor="name" className='align-bottom mb-0'>Name:</label>
+                <label for="name" className='align-bottom mb-0'>Name:</label>
                 <input name="name" type="text" className= 'border-dark border-top-0 border-right-0 border-left-0 border-bottom p-1 col-8' />
               </div>
               <div className= 'mb-3'>
-                <label htmlFor="email" className='align-bottom mb-0'>Email:</label>
+                <label for="email" className='align-bottom mb-0'>Email:</label>
                 <input name="email" type="email" className= 'border-dark border-top-0 border-right-0 border-left-0 border-bottom p-1 col-8' />
               </div>
               <div>
