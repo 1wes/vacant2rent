@@ -12,7 +12,7 @@ import Blog from './Views/Blog'
 import Details from './Search/pages/Details/index'
 import Home from './Search/pages/Home/index'
 // import SearchProperties from './Views/SearchProperties'
-import AddLists from "V2Rcode/AddLists";
+import AddLists from './Views/AddLists'
 import ViewProperty from './V2Rcode/ViewProperty'
 import HomePage from "Views/HomePage";
 
@@ -20,7 +20,6 @@ import HomePage from "Views/HomePage";
 ReactDOM.render(
   <BrowserRouter>
     <Switch>
-      
       <Route exact path='/' component={HomePage} />
       <Route exact component={Login} path='/login'/>
       <Route exact component={Register} path='/register'/>
