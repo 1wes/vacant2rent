@@ -7,7 +7,6 @@ function YelloRoundButton({text}) {
     borderRadius: '50px',
     backgroundColor: 'hsl(50, 100%, 50%)',
     margin: '.5rem auto',
-   
     fontWeight: 'bold',
     minWidth: '130px'
   
