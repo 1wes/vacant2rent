@@ -1,10 +1,10 @@
 import React from "react";
 
-function AddListForm() {
+function AddListForm({handleSubmit}) {
   const Btn = { padding: '1rem 2rem', color: 'white', backgroundColor: 'orange', margin: '1rem auto' };
   return (
     <div className=" addlist" style={{ padding: "10px 0 50px 0",fontWeight:'700' }}>
-      <form>
+      <form onSubmit={(e)=>{handleSubmit(e)}} >
         <div className="d-flex align-center justify-content-center mb-4">
           <label for="owner" className="capitalize">
             owner
@@ -241,7 +241,7 @@ function AddListForm() {
             </div>
           </div>
         </div>
-        <button type="submit" style={Btn} className="rounded align-self-center text-bold">
+        <button type="submit" style={Btn} className="rounded align-self-center text-bold" >
           Submit
         </button>
       </form>

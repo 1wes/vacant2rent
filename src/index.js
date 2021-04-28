@@ -3,9 +3,9 @@ import ReactDOM from "react-dom";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import Login from './Login/views/Login'
 import Register from './Register/views/Register'
-import PaymentForm from "./Payment/PaymentForm";
+import PaymentForm from "./Views/Payment";
 import "@fortawesome/fontawesome-free/css/all.min.css";
-import './index.css'
+import './index.css';
 import Pricing from "./Pricingplan/Pricing";
 import Contact from './Contact/Contact'
 import Blog from './Views/Blog'

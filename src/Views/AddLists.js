@@ -1,9 +1,15 @@
 import AddListForm from "components/AddListForm";
 import AppLayout from "components/Layouts/AppLayout";
-import AddressForm from "Payment/AddressForm";
+
 import React from "react";
+import { useHistory } from "react-router";
 
 function AddLists() {
+  const history = useHistory()
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    history.push('/pay')
+  }
  
   return (
     <AppLayout>
@@ -12,7 +18,8 @@ function AddLists() {
           <div style={{ padding: "100px 0 50px 0" }}>
             <h1 className="color-primary text-center">Add Property</h1>
           </div>
-          <AddListForm />
+          <AddListForm handleSubmit={handleSubmit}
+          />
         </div>
       </main>
     </AppLayout>
