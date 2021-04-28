@@ -11,7 +11,7 @@ function RectangularButton({text, bgl, bgr, color, width}) {
     color: `${color}`,
   }
   return (
-    <button style={buttonStyle} className='rounded capitalize' >{text}</button>
+    <button style={buttonStyle} className='rounded capitalize yellow-bg' >{text}</button>
   )
 }
 

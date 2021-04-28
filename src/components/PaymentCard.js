@@ -4,7 +4,7 @@ import RectangularButton from "components/Buttons/RectangularButton";
 function PaymentCard({bgr, bgl, btnTextColor, week, btnWidth, btnText, price}) {
   console.log(bgr, bgl)
   return (
-    <div className=" bg-light col-sm mx-1 my-2 px-0 pb-5 " style={{maxWidth:'300px'}}>
+    <div className="rounded hover bg-light col-sm mx-1 my-2 px-0 pb-5 " style={{maxWidth:'300px'}}>
       <div
         className="card-header  text-center d-flex align-items-center justify-content-center "
         style={{ height: "130px", backgroundColor:`${bgl}`, borderRadius: "0 0 55% 55%" }}
