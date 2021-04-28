@@ -128,5 +128,32 @@ label {
     text-transform: capitalize;
     align-self: flex-end;
 }
+.yellow-bg{
+    background-color: hsl(39, 100%, 50%);
+}
+.yellow-bg:hover{
+    background-color: hsl(28, 100%, 50%);
+}
+th, td{
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 1rem;
+    font-weight: bold;
+}
+.pay option, .pay select{
+    font-weight: bold;
+    font-size: .8rem;
 
-
+}
+.br-none{
+    border-right: none;
+}
+.bl-none{
+    border-left: none;
+}
+.bt-none{
+    border-top: none;
+}
+.bb-none{
+    border-bottom: none;
+}
