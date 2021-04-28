@@ -11,7 +11,7 @@ function YelloRoundButton({text}) {
   
   }
   return (
-    <button style={buttonStyle} >{text}</button>
+    <button style={buttonStyle} className='yellow-bg' >{text}</button>
   )
 }
 
