@@ -89,10 +89,10 @@ function Home() {
             </div>
                     
               <div className="w-full md:w-5/12 px-4 mr-0 ml-0" style={{color:"purple"}}>
-                <h3 className="text-3xl mb-2 font-semibold leading-normal">
+                <h3 className="text-3xl mb-2 mt-0 font-semibold leading-normal" style={{textAlign:"center"}}>
                   About us
                 </h3>
-                <p className="text-lg font-light leading-relaxed mt-4 mb-4 text-gray-700" style={{color:"purple", lineHeight:"1.5em"}}>
+                <p className="text-lg font-light leading-relaxed mt-4 mb-4 text-gray-700" style={{color:"black",fontSize:"15px", lineHeight:"1.5em"}}>
                   Lorem ipsum dolor sit amet, consec tetur adipisicing elit, sed
                   do eiusmod tempor incididuntut consec tetur adipisicing
                   elit,Lorem ipsum dolor sit amet.
@@ -114,7 +114,7 @@ function Home() {
             </div>
 
             {/* meet our agents */}
-          <section className="pt-20 pb-48">
+          <section className="pt-5 pb-48">
           <div className="container mx-auto px-4">
             <div className="flex flex-wrap justify-center text-center mb-3">
               <div className="w-full lg:w-6/12 px-4 mb-0">
