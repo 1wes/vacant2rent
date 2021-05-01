@@ -1,0 +1,9 @@
+/* desktop styles */
+#listing-cta{
+    /* height: 40vh; */
+    background: rgba(0, 0, 0,.5) url("../../../assets/house-1.jpg") !important;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-attachment: fixed;
+}
