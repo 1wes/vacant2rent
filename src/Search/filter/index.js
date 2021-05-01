@@ -40,15 +40,20 @@ class Filter extends React.Component {
     return (
       <aside className="mt-2">
         <div className={containerClasses}>
-          <h2 data-cy="property-count">
+          {/* <h2 data-cy="property-count">
             {`${count} private ${getPropertiesDisplayText(count)} for sale`}
-          </h2>
+          </h2> */}
+
+          <h4 className="page-tagline" style={{textAlign:"center", color:"purple", fontWeight:"bold", marginTop:"4em"}}>
+            LETS FIND A HOME THAT'S PERFECT FOR YOU
+          </h4>
+
           <form
             onChange={() => setTimeout(() => updateFilter(this.state), 0)}
             className={formClasses}
             noValidate
           >
-            <p className="mb-1">
+            {/* <p className="mb-1">
               Refine your results
               <button
                 data-cy="clear-button"
@@ -60,8 +65,8 @@ class Filter extends React.Component {
                 }}
               >
                 Clear
-              </button>
-            </p>
+              </button> */}
+            {/* </p> */}
             <div className="row row-cols-1 row-cols-md-3 g-4 text-center">
               <div className=" col-4 col-xs-12">
                 <div className="form-group">
