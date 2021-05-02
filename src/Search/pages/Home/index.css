@@ -17,3 +17,8 @@
     background-attachment: fixed;
     background-blend-mode: darken !important;
 }
+
+.agent-contact{
+    font-size: 13px !important;
+    text-align: left !important;
+}
