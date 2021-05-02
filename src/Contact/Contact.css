@@ -1,0 +1,8 @@
+#root{
+    background: rgba(8, 6, 110, 0.6) url("/src/assets/houseclear.png") !important;
+    background-repeat: no-repeat !important;
+    background-attachment: fixed;
+    background-size:cover !important;
+    background-blend-mode: darken !important;
+    background-position: center !important;
+}
