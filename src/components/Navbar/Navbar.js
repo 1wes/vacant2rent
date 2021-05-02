@@ -86,7 +86,7 @@ export default function Navbar(props) {
                   " px-3 py-4 lg:py-2 flex items-center text-xs font-bold"
                 }
                 // view_property
-                to="#"
+                to="/view_property"
               >
                 View Listing
               </Link>
