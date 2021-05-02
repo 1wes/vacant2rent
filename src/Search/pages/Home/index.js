@@ -12,6 +12,9 @@ import insight1 from "../../../assets/insight1.png";
 import insight2 from "../../../assets/insight2.png";
 import insight3 from "../../../assets/insight3.png";
 import insight4 from "../../../assets/insight4.png";
+import classnames from 'classnames'
+import {FiSearch} from 'react-icons/fi'
+import {BsPlusCircle} from 'react-icons/bs'
 
 import {
   PropertyListingsProvider,
@@ -64,6 +67,19 @@ const RectangularButton={
   marginTop:"-1em"
 }
 
+const filterButton={
+  // padding: '15px 15px 15px 15px',
+  // borderRadius: '10px',
+  // margin: '.5rem auto',
+  margin:'0 auto',
+  // fontWeight: 'bold',
+  minWidth: '80px',
+  width:'30%',
+  // marginLeft:'6em',
+  color:"purple",
+  backgroundColor:'orange ',
+}
+
 function Home() {
   return (
     <BaseLayout>
@@ -82,6 +98,64 @@ function Home() {
                     .map(listing => listing.postcode.split(' ')[0])
                     .filter((item, i, arr) => arr.indexOf(item) === i)}
                 />
+
+                {/* mobile view */}
+      <div className="mt-4 container mobile-filter" style={{textAlign:"center", }}>
+        <div className="w-full md:w-9/12 px-4 mr-auto ml-auto">
+          <h2 className="mt-1 filter-header" style={{color:"purple", fontWeight:"bold",fontSize:"18px"}}>
+            LET'S FIND A HOME THAT'S PERFECT FOR YOU
+          </h2>
+
+        {/* filter form */}
+          <form action="#" style={{textAlign:"center", backgroundColor:"", marginTop:"2em", marginBottom:"4em"}}>
+            <table classame="filter-options" style={{width:"100%"}}>
+              <tbody>
+                <tr>
+                  <td>
+                    <select name="location" id="location" style={{border:"none"}}>
+                      <option vlaue="" disabled selected> location </option>
+                      <option value="location1">location1</option>
+                      <option value="location2">location2</option>
+                      <option value="location3">location3</option>
+                      <option value="location4">location4</option>
+                    </select>
+                  </td>
+                  <td>
+                    <select name="property-type" id="p-type" style={{border:"none"}}>
+                      <option vlaue="" disabled selected>Property type </option>
+                      <option value="Apartment">Apartment</option>
+                      <option value="massionate">massionate</option>
+                      <option value="bungalow">bungalow</option>
+                      <option value="mansion">mansion</option>
+                    </select>
+                  </td>
+                  <td>
+                    <select name="max-price" id="price" style={{border:"none"}}>
+                      <option vlaue="" disabled selected>Max price</option>
+                      <option value="10,000">10,0000</option>
+                      <option value="20,000">20,000</option>
+                    </select>
+                  </td>
+                  <td>
+                    <span style={{fontWeight:"normal"}}>
+                      Advanced <i style={{float:"right", color:"purple", fontWeight:""}}>
+                          <BsPlusCircle />
+                      </i>
+                    </span>
+                  </td>
+                  <td style={{backgroundColor:"orange", fontWeight:"normal"}}>
+                    <button style={filterButton}>
+                      <i style={{float:"left"}}><FiSearch /></i>Search
+                    </button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </form>
+          </div>
+        </div>
+      {/* mobile view */}
+      
 
               <h4 className="recent-properties" style={{textAlign:"center", color:"purple", marginTop:"2em", fontWeight:"bold"}}>
                 Recent properties
