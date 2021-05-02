@@ -6,6 +6,11 @@ import idea from "../../../assets/team-4-470x470.png";
 import aboutus from "../../../assets/aboutus.png";
 import houseclear from "../../../assets/houseclear.png";
 import "./index.css";
+import {FaPhoneAlt} from "react-icons/fa"
+import insight1 from "../../../assets/insight1.png";
+import insight2 from "../../../assets/insight2.png";
+import insight3 from "../../../assets/insight3.png";
+import insight4 from "../../../assets/insight4.png";
 
 import {
   PropertyListingsProvider,
@@ -44,12 +49,27 @@ const listingButtonStyle={
   backgroundColor:'orange '
 }
 
+const RectangularButton={
+  padding: '15px 15px 15px 15px',
+  borderRadius: '10px',
+  // margin: '.5rem auto',
+  margin:'0 auto',
+  fontWeight: 'bold',
+  minWidth: '130px',
+  width:'30%',
+  // marginLeft:'6em',
+  color:"purple",
+  backgroundColor:'orange ',
+  marginTop:"-1em"
+}
+
 function Home() {
   return (
     <BaseLayout>
-      <div className="container">
+      <div className="">
 
         {/* recent properties */}
+        <div className="container">
         <PropertyListingsProvider>
           <PropertyListingsConsumer>
             {({ propertyListings, allListings, updateFilter }) => (
@@ -74,10 +94,57 @@ function Home() {
             )}
           </PropertyListingsConsumer>
         </PropertyListingsProvider>
+        </div>
 
-        {/* about us */}
+        {/* insights */}
+        <div className="flex flex-wrap items-center mt-3" id="insights" style={{color:"white",backgroundColor:""}}>
+          <div className="mt-5 container" style={{backgroundColor:"", textAlign:"center"}}>
+              <div className="w-full md:w-8/12 px-4 mr-auto ml-auto">
+                <h2 style={{fontWeight:"bold"}}>
+                  DID YOU KNOW YOU CAN BECOME VERIFIED?
+                </h2>
+              </div>    
+          </div>
+          <div className="w-full md:w-6/12 px-4 mr-auto ml-auto" style={{backgroundColor:""}}>
+            <div className="relative flex flex-col min-w-0 break-words  w-full md:w-6/12 mr-0 ml-auto mb-0"
+             style={{backgroundColor:"", display:"", verticalAlign:"", marginRight:"auto"}}>
+              <img src={insight1} alt="insight1"style={{height:"auto", width:"100%",maxWidth:"10em", float:"left"}} />
+              <span style={{float:"right"}}>There is some text here</span>
+            </div>
+          </div>
+            
+          <div className="w-full md:w-6/12 px-4 mr-auto ml-auto" style={{color:"white",backgroundColor:"" }}>
+            <div className="relative flex flex-col min-w-0 break-words  w-full md:w-6/12 mr-auto ml-0 mb-0" style={{backgroundColor:""}}>
+              <img src={insight2} alt="insight2" style={{height:"auto", width:"100%",maxWidth:"10em"}}/>There is some text here
+            </div> 
+          </div>
+
+          <div className="w-full md:w-6/12 px-4 mr-auto ml-auto" style={{color:"white",backgroundColor:""}}>
+            <div className="relative flex flex-col min-w-0 break-words  w-full md:w-6/12 mr-3 ml-auto mb-0" style={{backgroundColor:""}}>
+              <img src={insight3} alt="insight3" style={{height:"auto", width:"100%",maxWidth:"10em", align:"left"}} />There is some text here
+            </div>
+          </div>
+            
+          <div className="w-full md:w-6/12 px-4 mr-auto ml-auto" style={{color:"white",backgroundColor:"" }}>
+            <div className="relative flex flex-col min-w-0 break-words  w-full md:w-6/12 mr-auto ml-0 mb-0" style={{backgroundColor:""}}>
+              <img src={insight4} alt="insight4" alt="insight4" style={{height:"auto", width:"100%",maxWidth:"10em",align:"left"}} />
+              <span>There is some text here</span>
+            </div>
+          </div>
+
+          <div className="mt-5 container" style={{backgroundColor:"", textAlign:"center"}}>
+              <div className="w-full md:w-8/12 px-4 mr-auto ml-auto mt-0 mb-5">
+                    <button style={RectangularButton}>
+                      LIST  NOW
+                    </button>
+              </div>    
+          </div>
+
+        </div>
+        
+        <div className="container">
         <div className="flex flex-wrap items-center mt-3">
-
+          {/* about us */}
           <div className="w-full md:w-4/12 px-4 mr-auto ml-auto">
             <div className="relative flex flex-col min-w-0 break-words  w-full mb-6 rounded-lg">
                 <img
@@ -112,6 +179,7 @@ function Home() {
                     </div>
               </div>
             </div>
+            </div>
 
             {/* meet our agents */}
           <section className="pt-5 pb-48">
@@ -132,13 +200,17 @@ function Home() {
                   />
                   <div className="pt-6 text-center">
                     <h5 className="text-xl font-bold" style={{color:"purple"}}>Virginia Muli </h5>
-                    <p>
-                      Some text
-                    </p>
+                    <ul>
+                      <li className="agent-phone-number">
+                        <div>
+                          08784758347 <span><FaPhoneAlt/></span>
+                        </div>                        
+                      </li>
 
-                    <p style={{marginTop:"-1em"}}>
-                      Some text
-                    </p>
+                      <li>
+
+                      </li>
+                    </ul>
 
                     <div className="no-of-properties" style={{color:"purple", marginTop:"-1em"}}>
                       <span style={{fontWeight:"bold", fontSize:"2em"}}>
