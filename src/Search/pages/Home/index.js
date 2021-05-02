@@ -7,6 +7,7 @@ import aboutus from "../../../assets/aboutus.png";
 import houseclear from "../../../assets/houseclear.png";
 import "./index.css";
 import {FaPhoneAlt} from "react-icons/fa"
+import {FiLink2} from "react-icons/fi"
 import insight1 from "../../../assets/insight1.png";
 import insight2 from "../../../assets/insight2.png";
 import insight3 from "../../../assets/insight3.png";
@@ -105,7 +106,7 @@ function Home() {
                 </h2>
               </div>    
           </div>
-          <div className="w-full md:w-6/12 px-4 mr-auto ml-auto" style={{backgroundColor:""}}>
+          <div className="w-full md:w-6/12 px-4 mr-0 ml-auto" style={{backgroundColor:""}}>
             <div className="relative flex flex-col min-w-0 break-words  w-full md:w-6/12 mr-0 ml-auto mb-0"
              style={{backgroundColor:"", display:"", verticalAlign:"", marginRight:"auto"}}>
               <img src={insight1} alt="insight1"style={{height:"auto", width:"100%",maxWidth:"10em", float:"left"}} />
@@ -119,9 +120,9 @@ function Home() {
             </div> 
           </div>
 
-          <div className="w-full md:w-6/12 px-4 mr-auto ml-auto" style={{color:"white",backgroundColor:""}}>
-            <div className="relative flex flex-col min-w-0 break-words  w-full md:w-6/12 mr-3 ml-auto mb-0" style={{backgroundColor:""}}>
-              <img src={insight3} alt="insight3" style={{height:"auto", width:"100%",maxWidth:"10em", align:"left"}} />There is some text here
+          <div className="w-full md:w-6/12 px-4 mr-0 ml-auto" style={{color:"white",backgroundColor:""}}>
+            <div className="relative flex flex-col min-w-0 break-words  w-full md:w-6/12 mr-0 ml-auto mb-0" style={{backgroundColor:""}}>
+              <img src={insight3} alt="insight3" style={{height:"auto", width:"100%",maxWidth:"10em",}} />There is some text here
             </div>
           </div>
             
@@ -155,7 +156,7 @@ function Home() {
               </div>
             </div>
                     
-              <div className="w-full md:w-5/12 px-4 mr-0 ml-0" style={{color:"purple"}}>
+              <div className="w-full md:w-5/12 px-4 mr-0 ml-0" style={{color:"purple", marginTop:"-4em"}}>
                 <h3 className="text-3xl mb-2 mt-0 font-semibold leading-normal" style={{textAlign:"center"}}>
                   About us
                 </h3>
@@ -186,7 +187,7 @@ function Home() {
           <div className="container mx-auto px-4">
             <div className="flex flex-wrap justify-center text-center mb-3">
               <div className="w-full lg:w-6/12 px-4 mb-0">
-                <h2 className="text-4xl font-semibold" style={{color:"purple"}}>Meet our Agents</h2>
+                <h2 className="text-4xl font-semibold" style={{color:"purple", marginTop:"-1em"}}>Meet our Agents</h2>
               </div>
             </div>
             <div className="flex flex-wrap mt-0" style={{}}>
@@ -200,24 +201,26 @@ function Home() {
                   />
                   <div className="pt-6 text-center">
                     <h5 className="text-xl font-bold" style={{color:"purple"}}>Virginia Muli </h5>
-                    <ul>
-                      <li className="agent-phone-number">
-                        <div>
-                          08784758347 <span><FaPhoneAlt/></span>
-                        </div>                        
+                    <ul style={{listStyle:"none", marginLeft:"0"}}>
+                      <li className="agent-phone-number" style={{}}>
+                        <i style={{float:"left", color:"yellow",borderRadius:"50%", border:"1px solid yellow", padding:"5px"}}>
+                          <FaPhoneAlt />
+                        </i><span className="agent-contact">+254 7123 45678</span>
                       </li>
 
-                      <li>
-
+                      <li style={{marginTop:".5em"}}>
+                        <i style={{float:"left", color:"yellow", borderRadius:"50%", border:"1px solid yellow", padding:"5px"}}>
+                            <FiLink2/>
+                        </i> <span className="agent-contact">virginia@gmail.com</span> 
                       </li>
                     </ul>
 
-                    <div className="no-of-properties" style={{color:"purple", marginTop:"-1em"}}>
-                      <span style={{fontWeight:"bold", fontSize:"2em"}}>
+                    <div className="no-of-properties" style={{color:"purple",textAlign:"center"}}>
+                      <span style={{fontWeight:"bold", fontSize:"2em", }}>
                         12
                       </span>
 
-                      <div style={{marginTop:"-.5em"}}>
+                      <div style={{marginTop:"-.5em", textAlign:"center", fontWeight:"normal", fontSize:"13px"}}>
                         Properties listed
                       </div>
                     </div>
@@ -236,22 +239,28 @@ function Home() {
                   <div className="pt-6 text-center">
                     <h5 className="text-xl font-bold" style={{color:"purple", width:"100%"}}>Shadrack Omwami</h5>
 
-                    <p>
-                      Some text
-                    </p>
+                    <ul style={{listStyle:"none", marginLeft:"0"}}>
+                      <li className="agent-phone-number" style={{}}>
+                        <i style={{float:"left", color:"yellow",borderRadius:"50%", border:"1px solid yellow", padding:"5px"}}>
+                          <FaPhoneAlt />
+                        </i><span className="agent-contact">+254 7123 45678</span>
+                      </li>
 
-                    <p style={{marginTop:"-1em"}}>
-                      Some text
-                    </p>
+                      <li style={{marginTop:".5em"}}>
+                        <i style={{float:"left", color:"yellow", borderRadius:"50%", border:"1px solid yellow", padding:"5px"}}>
+                            <FiLink2/>
+                        </i> <span className="agent-contact">shadrack@gmail.com</span> 
+                      </li>
+                    </ul>
 
-                    <div className="no-of-properties" style={{color:"purple", marginTop:"-1em"}}>
-                    <span style={{fontWeight:"bold", fontSize:"2em"}}>
+                    <div className="no-of-properties" style={{color:"purple",textAlign:"center"}}>
+                      <span style={{fontWeight:"bold", fontSize:"2em", }}>
                         8
-                    </span>
+                      </span>
 
-                    <div style={{marginTop:"-.5em"}}>
+                      <div style={{marginTop:"-.5em", textAlign:"center", fontWeight:"normal", fontSize:"13px"}}>
                         Properties listed
-                    </div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -267,20 +276,27 @@ function Home() {
                   />
                   <div className="pt-6 text-center">
                     <h5 className="text-xl font-bold" style={{color:"purple"}}>Vincent Omolo</h5>
-                    <p>
-                      Some text
-                    </p>
 
-                    <p style={{marginTop:"-1em"}}>
-                      Some text
-                    </p>
+                    <ul style={{listStyle:"none", marginLeft:"0"}}>
+                      <li className="agent-phone-number" style={{}}>
+                        <i style={{float:"left", color:"yellow",borderRadius:"50%", border:"1px solid yellow", padding:"5px"}}>
+                          <FaPhoneAlt />
+                        </i><span className="agent-contact">+254 7123 45678</span>
+                      </li>
 
-                    <div className="no-of-properties" style={{color:"purple", marginTop:"-1em"}}>
-                      <span style={{fontWeight:"bold", fontSize:"2em"}}>
+                      <li style={{marginTop:".5em"}}>
+                        <i style={{float:"left", color:"yellow", borderRadius:"50%", border:"1px solid yellow", padding:"5px"}}>
+                            <FiLink2/>
+                        </i> <span className="agent-contact">vincent@gmail.com</span> 
+                      </li>
+                    </ul>
+
+                    <div className="no-of-properties" style={{color:"purple",textAlign:"center"}}>
+                      <span style={{fontWeight:"bold", fontSize:"2em", }}>
                         6
                       </span>
 
-                      <div style={{marginTop:"-.5em"}}>
+                      <div style={{marginTop:"-.5em", textAlign:"center", fontWeight:"normal", fontSize:"13px"}}>
                         Properties listed
                       </div>
                     </div>
@@ -298,20 +314,27 @@ function Home() {
                   />
                   <div className="pt-6 text-center">
                     <h5 className="text-xl font-bold" style={{color:"purple"}}>Sarah Wanjiru</h5>
-                    <p>
-                      Some text
-                    </p>
 
-                    <p style={{marginTop:"-1em"}}>
-                      Some text
-                    </p>
+                    <ul style={{listStyle:"none", marginLeft:"0"}}>
+                      <li className="agent-phone-number" style={{}}>
+                        <i style={{float:"left", color:"yellow",borderRadius:"50%", border:"1px solid yellow", padding:"5px"}}>
+                          <FaPhoneAlt />
+                        </i><span className="agent-contact">+254 7123 45678</span>
+                      </li>
 
-                    <div className="no-of-properties" style={{color:"purple", marginTop:"-1em"}}>
-                      <span style={{fontWeight:"bold", fontSize:"2em"}}>
+                      <li style={{marginTop:".5em"}}>
+                        <i style={{float:"left", color:"yellow", borderRadius:"50%", border:"1px solid yellow", padding:"5px"}}>
+                            <FiLink2/>
+                        </i> <span className="agent-contact">sarahw@gmail.com</span> 
+                      </li>
+                    </ul>
+
+                    <div className="no-of-properties" style={{color:"purple",textAlign:"center"}}>
+                      <span style={{fontWeight:"bold", fontSize:"2em", }}>
                         4
                       </span>
 
-                      <div style={{marginTop:"-.5em"}}>
+                      <div style={{marginTop:"-.5em", textAlign:"center", fontWeight:"normal", fontSize:"13px"}}>
                         Properties listed
                       </div>
                     </div>
