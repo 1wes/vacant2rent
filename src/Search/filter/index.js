@@ -53,7 +53,7 @@ class Filter extends React.Component {
 
     return (
 
-      <div className="mt-4 container" style={{textAlign:"center"}}>
+      <div className="mt-4 container desktop-filter" style={{textAlign:"center"}}>
         <div className="w-full md:w-9/12 px-4 mr-auto ml-auto">
           <h2 className="mt-1 filter-header" style={{color:"purple", fontWeight:"bold",fontSize:"18px"}}>
             LET'S FIND A HOME THAT'S PERFECT FOR YOU
