@@ -11,7 +11,7 @@ class Contact extends Component {
         <Navbar />
         <div>
           <section
-            className="relative block py-24  bg-white-900"
+            className="relative block py-24  bg-white-900 contact-form-section"
             style={{ paddingTop: "20rem" }}
           >
             <div className="container mx-auto px-4 contact-form-container">
